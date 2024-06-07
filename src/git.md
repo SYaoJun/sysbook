@@ -1,4 +1,9 @@
-# 第一章 GIT:一些不常用但有用的命令
+# 第一章 Git与Github
+## 简介
+Git：是分布式版本控制系统。
+Github：是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名github。
+## Git概念
+暂存区：已经修改、等待后续提交的文件。
 ## 追加修改
 ```shell
 # 修改作者
@@ -46,4 +51,12 @@ git clone --branch v1.14.0 https://gitee.com/mirrors/googletest.git
 ## 基于当前提交切换到新分支
 ```shell
 git switch -c new-feature
+```
+## 重命名文件
+```shell
+git mv file1 file2
+```
+## 查看某个文件是否被忽略
+```shell
+git check-ignore -v file
 ```
