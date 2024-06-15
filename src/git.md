@@ -1,9 +1,24 @@
 # 第一章 Git与Github
 ## 简介
 Git：是分布式版本控制系统。
+
 Github：是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名github。
-## Git概念
+
 暂存区：已经修改、等待后续提交的文件。
+## 配置用户和邮箱
+```shell
+git config --global user.name "SYaoJun"
+git config --global user.email "940334249@qq.com"
+```
+## cherry-pick
+```shell
+git cherry-pick commit-id
+# 手动解决有冲突的文件，然后添加这些文件
+git add conflict_file
+git cherry-pick --continue
+# 如果想放弃修改
+git cherry-pick --abort
+```
 ## 追加修改
 ```shell
 # 修改作者
