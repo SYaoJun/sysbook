@@ -1,6 +1,6 @@
 [book]
-authors = ["lzzsG"]
-language = "en"
+authors = ["姚军"]
+language = "zh-CN"
 multilingual = false
 src = "src"
 title = "系统编程"
